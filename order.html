@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Caffein 8</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="home">
+            <h1>Welcome to Elsa's Caffe</h1>
+            <p>Nikmati Waktu, Nikmati Kopi, Nikmati Hidup</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="./index.html#about">About Us</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./order.html">Order Online</a></li>
+                <li><a href="./suggestions.html">Suggestions</a></li>
+            </ul>
+        </nav>
+        <section id="order">
+            <h2>Order Online</h2>
+            <form id="orderForm">
+                <label for="orderName">Name:</label>
+                <input type="text" id="orderName" name="orderName" required />
+                <label for="orderEmail">Email:</label>
+                <input
+                    type="email"
+                    id="orderEmail"
+                    name="orderEmail"
+                    required
+                />
+                <label for="orderItem">Select Item:</label>
+                <select id="orderItem" name="orderItem" required>
+                    <option value="Espresso">Espresso - Rp. 25.000</option>
+                    <option value="Americano">Americano - Rp. 30.000</option>
+                    <option value="Cappuccino">Cappuccino - Rp. 33.000</option>
+                    <option value="Latte">Latte - Rp. 33.000</option>
+                    <option value="Mocha">Mocha - Rp. 35.000</option>
+                    <option value="Cold Brew">Cold Brew - Rp. 38.000</option>
+                    <option value="Macchiato">Macchiato - Rp. 36.000</option>
+                    <option value="Affogato">Affogato - Rp. 40.000</option>
+                </select>
+                <label for="orderQuantity">Quantity:</label>
+                <input
+                    type="number"
+                    id="orderQuantity"
+                    name="orderQuantity"
+                    min="1"
+                    required
+                />
+                <button type="submit">Place Order</button>
+            </form>
+            <p id="orderConfirmation"></p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Elsa's Caffe. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
